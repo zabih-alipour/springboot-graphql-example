@@ -1,0 +1,21 @@
+server:
+  port: 8201
+  servlet:
+    contextPath: /eblog
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+graphiql:
+  mapping: /graphiql
+  endpoint: /eblog/graphql
+  enabled: true
+  pageTitle: GraphiQL
+
+
+spring:
+  jpa:
+    hibernate.ddl-auto: create-drop
+    show-sql: true
+    generate-ddl: true
